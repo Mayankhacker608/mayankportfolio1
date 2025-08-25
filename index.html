@@ -195,94 +195,103 @@
     </section>
 
     <!-- Contact -->
+
+    <!-- Contact -->
     <section id="contact" class="px-6 py-12 bg-[#1a1a1a]">
       <h2 class="text-4xl font-bold text-center mb-8">
         Contact <span class="text-[#03e3fc]">Me!</span>
       </h2>
-      <!-- Working Form with Formspree -->
-      <!-- Contact -->
-<section id="contact" class="px-6 py-12 bg-[#1a1a1a]">
-  <h2 class="text-4xl font-bold text-center mb-8">
-    Contact <span class="text-[#03e3fc]">Me!</span>
-  </h2>
 
-  <form
-    id="contactForm"
-    action="https://formspree.io/f/xandwgzq" 
-   
-  
-    <!-- Name & Email -->
-    <div class="grid md:grid-cols-2 gap-6">
-      <div>
-        <label class="block mb-2 text-sm font-semibold text-gray-300">Full Name</label>
-        <input
-          type="text"
-          name="name"
-          required
-          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
-          placeholder="Enter your name"
-        />
-      </div>
-      <div>
-        <label class="block mb-2 text-sm font-semibold text-gray-300">Email Address</label>
-        <input
-          type="email"
-          name="email"
-          required
-          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
-          placeholder="Enter your email"
-        />
-      </div>
-    </div>
-
-    <!-- Phone & Subject -->
-    <div class="grid md:grid-cols-2 gap-6">
-      <div>
-        <label class="block mb-2 text-sm font-semibold text-gray-300">Mobile Number</label>
-        <input
-          type="number"
-          name="phone"
-          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
-          placeholder="Enter your phone"
-        />
-      </div>
-      <div>
-        <label class="block mb-2 text-sm font-semibold text-gray-300">Subject</label>
-        <input
-          type="text"
-          name="subject"
-          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
-          placeholder="Message subject"
-        />
-      </div>
-    </div>
-
-    <!-- Message -->
-    <div>
-      <label class="block mb-2 text-sm font-semibold text-gray-300">Your Message</label>
-      <textarea
-        name="message"
-        required
-        class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md h-36 resize-none"
-        placeholder="Write your message here..."
-      ></textarea>
-    </div>
-
-    <!-- Button -->
-    <div class="text-center">
-      <button
-        id="submitBtn"
-        type="submit"
-        class="px-8 py-3 bg-[#03e3fc] hover:bg-[#02c2d9] transition rounded-full font-semibold shadow-lg flex items-center justify-center gap-2 mx-auto"
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/xandwgzq"
+        <!--
+        name
+        &
+        Email
+        --
       >
-        <span id="btnText">Send Message</span>
-        <span
-          id="spinner"
-          class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"
-        ></span>
-      </button>
-    </div>
-  </form>
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-300"
+              >Full Name</label
+            >
+            <input
+              type="text"
+              name="name"
+              required
+              class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+              placeholder="Enter your name"
+            />
+          </div>
+          <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-300"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              name="email"
+              required
+              class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+              placeholder="Enter your email"
+            />
+          </div>
+        </div>
+
+        <!-- Phone & Subject -->
+        <div class="grid md:grid-cols-2 gap-6">
+          <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-300"
+              >Mobile Number</label
+            >
+            <input
+              type="number"
+              name="phone"
+              class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+              placeholder="Enter your phone"
+            />
+          </div>
+          <div>
+            <label class="block mb-2 text-sm font-semibold text-gray-300"
+              >Subject</label
+            >
+            <input
+              type="text"
+              name="subject"
+              class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+              placeholder="Message subject"
+            />
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label class="block mb-2 text-sm font-semibold text-gray-300"
+            >Your Message</label
+          >
+          <textarea
+            name="message"
+            required
+            class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md h-36 resize-none"
+            placeholder="Write your message here..."
+          ></textarea>
+        </div>
+
+        <!-- Button -->
+        <div class="text-center">
+          <button
+            id="submitBtn"
+            type="submit"
+            class="px-8 py-3 bg-[#03e3fc] hover:bg-[#02c2d9] transition rounded-full font-semibold shadow-lg flex items-center justify-center gap-2 mx-auto"
+          >
+            <span id="btnText">Send Message</span>
+            <span
+              id="spinner"
+              class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"
+            ></span>
+          </button>
+        </div>
+      </form>
       <div id="formMessage" class="text-center mt-4 hidden"></div>
     </section>
 
