@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Mayank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <!-- SEO -->
+    <meta
+      name="description"
+      content="Mayank Goyal - WordPress Developer, Portfolio showcasing web development projects, services, and contact information."
+    />
+    <meta
+      name="keywords"
+      content="Mayank Goyal, Web Developer, WordPress, Tailwind CSS, Portfolio"
+    />
+    <meta name="author" content="Mayank Goyal" />
+
+    <!-- Open Graph (Social Preview) -->
+    <meta property="og:title" content="Portfolio - Mayank Goyal" />
+    <meta
+      property="og:description"
+      content="WordPress Developer & Web Designer Portfolio"
+    />
+    <meta property="og:image" content="mayank.png" />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="bg-black text-white">
+    <!-- Header -->
+    <header
+      class="flex justify-between items-center px-6 py-4 bg-[#303536] sticky top-0 z-50"
+    >
+      <div class="text-2xl font-extrabold cursor-pointer">Portfolio</div>
+      <!-- Desktop Nav -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-8 text-lg">
+          <li><a href="#home" class="hover:text-[#03e3fc]">Home</a></li>
+          <li><a href="#about" class="hover:text-[#03e3fc]">About</a></li>
+          <li><a href="#services" class="hover:text-[#03e3fc]">Services</a></li>
+          <li>
+            <a href="#projects" class="hover:text-[#03e3fc]">Portfolio</a>
+          </li>
+          <li><a href="#contact" class="hover:text-[#03e3fc]">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Mobile Menu Icon -->
+      <button id="menuBtn" class="md:hidden p-2 bg-[#03e3fc] rounded">☰</button>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav id="mobileMenu" class="hidden md:hidden bg-[#303536]">
+      <ul class="flex flex-col items-center space-y-4 py-4 text-lg">
+        <li><a href="#home" class="hover:text-[#03e3fc]">Home</a></li>
+        <li><a href="#about" class="hover:text-[#03e3fc]">About</a></li>
+        <li><a href="#services" class="hover:text-[#03e3fc]">Services</a></li>
+        <li><a href="#projects" class="hover:text-[#03e3fc]">Portfolio</a></li>
+        <li><a href="#contact" class="hover:text-[#03e3fc]">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <section
+      id="home"
+      class="flex flex-col md:flex-row items-center justify-between px-6 py-12 max-w-6xl mx-auto"
+    >
+      <div class="space-y-4 md:w-1/2 text-center md:text-left">
+        <h3 class="text-2xl">Hello, It's Me</h3>
+        <h1 class="text-4xl md:text-5xl font-extrabold">Mayank Goyal</h1>
+        <h2 class="text-2xl md:text-4xl font-bold">
+          And I'm a <span id="typed" class="text-[#03e3fc]"></span>
+        </h2>
+        <p class="text-gray-300">
+          I build modern, responsive websites and WordPress e-commerce stores.
+        </p>
+        <div class="flex justify-center md:justify-start gap-4">
+          <a
+            href="https://drive.google.com/file/d/1NcLcm1NaSwzfhHrVfjhUJu35h_zYSLIl/view?usp=drive_link"
+          >
+            <button
+              class="px-6 py-3 bg-[#03e3fc] hover:bg-[#02c2d9] transition rounded-full font-semibold shadow-lg"
+            >
+              Download CV
+            </button>
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 md:mt-0 md:w-1/2 flex justify-center">
+        <img
+          src="mayank.png"
+          alt="Mayank Profile"
+          class="w-64 md:w-[400px] rounded-lg shadow-lg"
+        />
+      </div>
+    </section>
+
+    <!-- About -->
+    <section
+      id="about"
+      class="flex flex-col-reverse md:flex-row items-center gap-10 px-6 py-12 max-w-6xl mx-auto"
+    >
+      <div class="md:w-2/3 space-y-4 text-center md:text-left">
+        <h2 class="text-4xl font-bold">
+          About <span class="text-[#03e3fc]">Me</span>
+        </h2>
+        <p class="text-lg text-gray-300 leading-relaxed">
+          I am a skilled WordPress developer with expertise in creating and
+          customizing WooCommerce-powered e-commerce stores. With a strong
+          foundation in both design and development, I focus on building
+          websites that are fast, user-friendly, and optimized for business
+          growth.
+        </p>
+        <a href="#"
+          ><button
+            class="px-6 py-3 bg-[#03e3fc] hover:bg-[#02c2d9] transition rounded-full font-semibold shadow-lg"
+          >
+            Read More
+          </button></a
+        >
+      </div>
+      <img
+        src="mayank23.png"
+        alt="About me"
+        class="w-64 md:w-[350px] rounded-lg shadow-lg"
+      />
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="px-6 py-12 bg-[#1a1a1a]">
+      <h2 class="text-4xl font-bold text-center mb-8">
+        Our <span class="text-[#03e3fc]">Services</span>
+      </h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div class="bg-[#3f4242] p-6 rounded-xl text-center shadow-lg">
+          <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+          <p class="text-gray-300">
+            I create fully responsive, SEO-optimized, and high-performance
+            websites using modern frameworks and best practices.
+          </p>
+        </div>
+        <div class="bg-[#3f4242] p-6 rounded-xl text-center shadow-lg">
+          <h3 class="text-2xl font-bold mb-2">Web Design</h3>
+          <p class="text-gray-300">
+            From wireframes to polished UI/UX designs, I ensure that every
+            website is visually appealing and provides a smooth user experience.
+          </p>
+        </div>
+        <div class="bg-[#3f4242] p-6 rounded-xl text-center shadow-lg">
+          <h3 class="text-2xl font-bold mb-2">E-Commerce</h3>
+          <p class="text-gray-300">
+            I specialize in WooCommerce and custom e-commerce development.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="px-6 py-12 max-w-6xl mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8">
+        Latest <span class="text-[#03e3fc]">Projects</span>
+      </h2>
+      <div class="space-y-6">
+        <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+          <video
+            src="Mayank Portfolio.mp4"
+            controls
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-full object-cover"
+            aria-label="Portfolio project showcase"
+          ></video>
+        </div>
+        <div class="aspect-video rounded-lg overflow-hidden shadow-lg">
+          <video
+            src="Screen Recording 2025-08-16 082337.mp4"
+            controls
+            autoplay
+            muted
+            loop
+            playsinline
+            class="w-full h-full object-cover"
+            aria-label="Screen recording project"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="px-6 py-12 bg-[#1a1a1a]">
+      <h2 class="text-4xl font-bold text-center mb-8">
+        Contact <span class="text-[#03e3fc]">Me!</span>
+      </h2>
+      <!-- Working Form with Formspree -->
+      <!-- Contact -->
+<section id="contact" class="px-6 py-12 bg-[#1a1a1a]">
+  <h2 class="text-4xl font-bold text-center mb-8">
+    Contact <span class="text-[#03e3fc]">Me!</span>
+  </h2>
+
+  <form
+    id="contactForm"
+    action="https://formspree.io/f/xandwgzq" 
+   
+  
+    <!-- Name & Email -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-gray-300">Full Name</label>
+        <input
+          type="text"
+          name="name"
+          required
+          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+          placeholder="Enter your name"
+        />
+      </div>
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-gray-300">Email Address</label>
+        <input
+          type="email"
+          name="email"
+          required
+          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+          placeholder="Enter your email"
+        />
+      </div>
+    </div>
+
+    <!-- Phone & Subject -->
+    <div class="grid md:grid-cols-2 gap-6">
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-gray-300">Mobile Number</label>
+        <input
+          type="number"
+          name="phone"
+          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+          placeholder="Enter your phone"
+        />
+      </div>
+      <div>
+        <label class="block mb-2 text-sm font-semibold text-gray-300">Subject</label>
+        <input
+          type="text"
+          name="subject"
+          class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md"
+          placeholder="Message subject"
+        />
+      </div>
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label class="block mb-2 text-sm font-semibold text-gray-300">Your Message</label>
+      <textarea
+        name="message"
+        required
+        class="w-full bg-[#3a3d3d] text-white p-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#03e3fc] shadow-md h-36 resize-none"
+        placeholder="Write your message here..."
+      ></textarea>
+    </div>
+
+    <!-- Button -->
+    <div class="text-center">
+      <button
+        id="submitBtn"
+        type="submit"
+        class="px-8 py-3 bg-[#03e3fc] hover:bg-[#02c2d9] transition rounded-full font-semibold shadow-lg flex items-center justify-center gap-2 mx-auto"
+      >
+        <span id="btnText">Send Message</span>
+        <span
+          id="spinner"
+          class="hidden w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"
+        ></span>
+      </button>
+    </div>
+  </form>
+      <div id="formMessage" class="text-center mt-4 hidden"></div>
+    </section>
+
+    <!-- Typing effect + Mobile Menu Toggle + Form Handling -->
+    <script>
+      var typed = new Typed("#typed", {
+        strings: [
+          "Web Developer",
+          "WordPress Expert",
+          "UI Designer",
+          "Freelancer",
+          "Hacker",
+        ],
+        typeSpeed: 80,
+        backSpeed: 50,
+        loop: true,
+      });
+
+      // Mobile menu toggle
+      const menuBtn = document.getElementById("menuBtn");
+      const mobileMenu = document.getElementById("mobileMenu");
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+
+      // Contact form submit with success/error + spinner
+      const form = document.getElementById("contactForm");
+      const formMessage = document.getElementById("formMessage");
+      const submitBtn = document.getElementById("submitBtn");
+      const btnText = document.getElementById("btnText");
+      const spinner = document.getElementById("spinner");
+
+      form.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        // Show spinner
+        btnText.innerText = "Sending...";
+        spinner.classList.remove("hidden");
+        submitBtn.disabled = true;
+
+        const formData = new FormData(form);
+        try {
+          const response = await fetch(form.action, {
+            method: form.method,
+            body: formData,
+            headers: { Accept: "application/json" },
+          });
+
+          if (response.ok) {
+            formMessage.className =
+              "text-green-400 font-semibold mt-4 text-lg text-center";
+            formMessage.innerText = "✅ Message Sent Successfully!";
+            formMessage.classList.remove("hidden");
+            form.reset();
+          } else {
+            formMessage.className =
+              "text-red-400 font-semibold mt-4 text-lg text-center";
+            formMessage.innerText =
+              "❌ Oops! Something went wrong. Please try again.";
+            formMessage.classList.remove("hidden");
+          }
+        } catch (error) {
+          formMessage.className =
+            "text-red-400 font-semibold mt-4 text-lg text-center";
+          formMessage.innerText =
+            "⚠️ Network error. Please check your connection.";
+          formMessage.classList.remove("hidden");
+        }
+
+        // Reset button
+        btnText.innerText = "Send Message";
+        spinner.classList.add("hidden");
+        submitBtn.disabled = false;
+      });
+    </script>
+  </body>
+</html>
